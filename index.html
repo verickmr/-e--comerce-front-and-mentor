@@ -1,71 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <!-- displays site properly based on user's device -->
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Frontend Mentor | E-commerce product page</title>
+  </head>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./style.css">
-  <title>Frontend Mentor | E-commerce product page</title>
-
-</head>
-
-<body>
-  <header>
-    <img src="./images/logo.svg" alt="">
-    <ul>
-      <li>Collections</li>
-      <li>Men</li>
-      <li>Women</li>
-      <li>About</li>
-      <li>Contact</li>
-    </ul>
-
-    <img src="./images/icon-cart.svg" alt="">
-    <img src="./images/image-avatar.png" alt="">
-
-  </header>
-  <main>
-    <section id="carrosel">
-      <img src="./images/image-product-1.jpg" alt="">
-      <div id="galeria">
-        <img src="./images/image-product-1-thumbnail.jpg" alt="">
-        <img src="./images/image-product-2-thumbnail.jpg" alt="">
-        <img src="./images/image-product-3-thumbnail.jpg" alt="">
-        <img src="./images/image-product-4-thumbnail.jpg" alt="">
+  <body>
+    <header>
+      <img id="logo" src="./images/logo.svg" alt="" />
+      <ul>
+        <li>Collections</li>
+        <li>Men</li>
+        <li>Women</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+      <div id="user">
+        <img id="cart" src="./images/icon-cart.svg" alt="" />
+        <img id="avatar" src="./images/image-avatar.png" alt="" />
       </div>
+    </header>
+    <main>
+      <section id="carrosel">
+        <img src="./images/image-product-1.jpg" alt="" />
+        <div id="galeria">
+          <img id="active" src="./images/image-product-1-thumbnail.jpg" alt="" />
+          <img src="./images/image-product-2-thumbnail.jpg" alt="" />
+          <img src="./images/image-product-3-thumbnail.jpg" alt="" />
+          <img src="./images/image-product-4-thumbnail.jpg" alt="" />
+        </div>
+      </section>
+      <section id="card">
+        <h3>SNEAKERS COMPANY</h3>
 
-    </section>
-    <section id="card">
-      <h3>Sneaker Company</h3>
+        <h2>Fall Limited Edition Sneakers</h2>
 
-      <h2>Fall Limited Edition Sneakers</h2>
+        <p>
+          These low-profile sneakers are your perfect casual wear companion.
+          Featuring a durable rubber outer sole, they’ll withstand everything
+          the weather can offer.
+        </p>
+        <div id="price"><strong>$125.00</strong>
+        <span>50%</span> 
+        <s> $250.00 </s></div>
+        
+        <div id="botoes">
+          <button id="quantidade">
+            <img src="./images/icon-minus.svg" alt="" /><b>0</b>
+            <img src="./images/icon-plus.svg" alt="" />
+          </button>
 
-      <p>These low-profile sneakers are your perfect casual wear companion. Featuring a
-        durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
-
-      $125.00
-      50%
-      <s> $250.00 </s>
-      <button><img src="./images/icon-minus.svg" alt="">0 <img src="./images/icon-plus.svg" alt=""></button>
-
-      <button><img src="./images/icon-cart.svg" alt="">Add to cart</button>
-
-    </section>
-
-  </main>
-  <footer>
-    <div class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
-      Coded by <a href="#">Victor Erick</a>.
-    </div>
-  </footer>
-
-</body>
-
+          <button id="carrinho">
+            <img src="./images/icon-cart.svg" alt="" /><h4>Add to cart</h4>
+          </button>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <div class="attribution">
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://github.com/verickmr/-e--comerce-front-and-mentor">Victor Erick</a>.
+      </div>
+    </footer>
+  </body>
 </html>

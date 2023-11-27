@@ -10,34 +10,55 @@
 header{
     display: flex;
     border-bottom: solid 1px hsl(220, 14%, 75%);
+    height: 100px;
+}
+
+#cart{
+    margin-right: -px;
+}
+
+#logo{
+    margin-left: 0;
+    margin-right: -320px;
+}
+
+#user{
+    margin-right: 0;
+    display: flex;
+    gap: 50px;
+}
+
+#avatar{
+    margin-right: 0;
+    width: 50px;
 }
 
 ul{
     display: flex;
-    flex-direction: row;
+    flex-direction:row;
     list-style: none;
-    color: hsl(219, 9%, 45%) ;
+    color: hsl(220, 14%, 75%)   ;
 }
 
 li{
     padding: 0 10px ;
     font-size: 16px;
+    font-weight: bold;
 }
 
 main{
-    display: grid;
-    grid-template-columns: 50% 50%;
-    margin-top: 50px;
+    display: flex;
+    margin-top: 70px;
 }
 
 section{
     height: 600px;
-    border: solid 1px black;
 }
 
 #carrosel img{
     border-radius: 15px;
 }
+
 
 #carrosel >img{
     width: 500px;
@@ -45,10 +66,11 @@ section{
 
 #galeria{
     display: flex;
-    justify-content: space-between;
-
+    gap: 10px;
+    margin-right: 0;
+    margin-left: 0;
 }
-div img{
+#galeria img{
     width: 88px;
 }
 
@@ -58,18 +80,84 @@ div img{
     justify-content: space-between;
     padding: 30px;
     text-align: left;
+    width: 500px;
 }
 
 h3{
-    color: hsl(26, 100%, 55%)
+    color: hsl(26, 100%, 55%);
+    margin-left: 0;
+}
+
+h2{
+    font-size: 48px;
 }
 
 p{
     font-size: 16px;
+    color:hsl(220, 14%, 75%);
+    font-weight: bold;
 }
 
 s{
     color: hsl(220, 14%, 75%);
+    display: block;
+}
+
+strong{
+    font-size: 24px;
+    font-weight: bold;
+}
+
+#price{
+    margin-left: 0;
+}
+
+span{
+    background-color: hsl(25, 100%, 94%);
+    color: hsl(26, 100%, 55%);
+    padding: 5px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+#botoes{
+    display: grid;
+    grid-template-columns: 40%  60%;
+    gap: 10px;
+    width: 100%;
+}
+
+#quantidade{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+button{
+    width: 100%;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+    height: 50px;
+    font-weight: bold;
+}
+
+#carrinho{
+    background-color: hsl(26, 100%, 55%);
+    color: #fff;
+    display: flex;
+    flex-direction: center;
+    margin: 0;
+    text-align: center;
+}
+
+#carrinho h4{
+    margin-left: -40px;
+}
+
+#active{
+    border: solid 3px hsl(26, 100%, 55%);
+    opacity: 0.5;
 }
 
 .attribution { font-size: 11px; text-align: center;}
